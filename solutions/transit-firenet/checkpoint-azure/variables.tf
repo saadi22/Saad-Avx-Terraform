@@ -52,10 +52,7 @@ variable fw_image_version {
   default = ""
 }
 
-variable fw_password {
-  default = "Aviatrix#123"
-}
-
 variable fw_image {
-  default = "Check Point CloudGuard IaaS Next-Gen Firewall w. Threat Prevention & SandBlast BYOL"
+  #default = "Check Point CloudGuard IaaS Next-Gen Firewall w. Threat Prevention & SandBlast BYOL"
+  default = "Check Point CloudGuard IaaS Single Gateway R80.40 - Pay As You Go (NGTP)"
 }       
