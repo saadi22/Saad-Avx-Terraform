@@ -11,6 +11,10 @@ variable "password" {
   type    = string
   default = ""
 }
+variable "fw_password" {
+  type    = string
+  default = ""
+}
 
 variable "controller_ip" {
   type    = string
