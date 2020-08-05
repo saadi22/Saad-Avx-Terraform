@@ -25,7 +25,7 @@ resource "aviatrix_vpc" "transit_firenet" {
   #s
   
 }
-
+#######
 # Create Aviatrix Transit spoke vnets 
 resource "aviatrix_vpc" "avx_spoke_vpc" {
   count                = var.vpc_count
