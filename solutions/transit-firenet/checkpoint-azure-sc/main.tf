@@ -17,7 +17,7 @@ resource "aviatrix_vpc" "transit_firenet" {
   cloud_type           = var.cloud_type
   account_name         = var.azure_account_name
   region               = var.region
-  name                 = "AZSC2-Transit"
+  name                 = "AZSC-2-Transit"
   cidr                 = "172.16.20.0/23"
   #cidr                 = cidrsubnet("10.0.0.0/8", 8, random_integer.subnet.result)
   aviatrix_transit_vpc = false
