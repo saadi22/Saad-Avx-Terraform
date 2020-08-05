@@ -22,6 +22,7 @@ resource "aviatrix_vpc" "transit_firenet" {
   #cidr                 = cidrsubnet("10.0.0.0/8", 8, random_integer.subnet.result)
   aviatrix_transit_vpc = false
   aviatrix_firenet_vpc = true
+  #something
 }
 
 # Create Aviatrix Transit spoke vnets 
