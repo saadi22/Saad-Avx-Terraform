@@ -130,7 +130,7 @@ resource "aviatrix_firenet" "firewall_net" {
 
   firewall_instance_association {
     firenet_gw_name      = aviatrix_transit_gateway.transit_firenet_gw.gw_name
-    vendor_type          = "Check Point Cloud Guard"
+    vendor_type          = "Generic"
     instance_id          = aviatrix_firewall_instance.firewall_instance_1.instance_id
     firewall_name        = aviatrix_firewall_instance.firewall_instance_1.firewall_name
     attached             = true
@@ -141,7 +141,7 @@ resource "aviatrix_firenet" "firewall_net" {
 
   firewall_instance_association {
     firenet_gw_name      = "${aviatrix_transit_gateway.transit_firenet_gw.gw_name}-hagw"
-    vendor_type          = "Check Point Cloud Guard"
+    vendor_type          = "Generic"
     instance_id          = aviatrix_firewall_instance.firewall_instance_2.instance_id
     firewall_name        = aviatrix_firewall_instance.firewall_instance_2.firewall_name
     attached             = true
